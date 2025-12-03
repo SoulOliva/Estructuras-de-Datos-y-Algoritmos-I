@@ -135,7 +135,7 @@ int main() {
     int n;
     int valor;
     
-    printf("/-----------------LISTA DOBLEMENTE LIGADA----------------/\n");
+    printf("/-----------------LISTA DOBLEMENTE LIGADA---------------------/\n");
     
     printf("¿Cuantos valores deseas insertar al inicio? ");
     scanf("%d", &n);
@@ -145,6 +145,7 @@ int main() {
         scanf("%d", &valor);
         insertarInicio(&inicio, valor);
     }
+
 //Llamado de funciones
     recorrerAdelante(inicio);
     recorrerAtras(inicio);
