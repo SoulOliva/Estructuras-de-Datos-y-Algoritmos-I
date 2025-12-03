@@ -9,4 +9,4 @@ def fibonacci_top_down(numero):
     return memoria[numero]
 
 resultado = fibonacci_top_down(12)
-print(f"El resultado es: {resultado}")
+print(f"El resultado es: {resultado}")s
