@@ -54,20 +54,22 @@ match opcion:
         print(tupla_diasDelMes[1])
     case 6:
         from collections import namedtuple
-        planeta=namedtuple("planeta", ["nombre", "numero"])
-        planeta=planeta("mercurio", 1)
-        print(planetal)
-        planeta2=planeta("Venus", 2)
+        Planeta = namedtuple("Planeta", ["nombre", "numero"])
+        planeta1 = Planeta("Mercurio", 1)
+        planeta2 = Planeta("Venus", 2)
+        print(planeta1)
+        print(planeta2)
         print(planeta1.nombre, planeta1.numero)
         print(planeta2[0], planeta2[1])
-        print("Campos de la tupla: []".formato(planeta1._fields))
+        print("Campos de la tupla: {}".format(Planeta._fields))
     case 7:
         elementos={"hidrogeno": 1, "helio":2, "carbon":6}
         print(elementos)
         print (elementos["hidrogeno"])
     case 8:
         def impirime_nombre(nombre):
-            print("hola "+nombre)
+            print("Hola "+nombre)
+        impirime_nombre(Prof)
     case 9:
         vg="global"
         def funcion_v1():
@@ -88,12 +90,13 @@ match opcion:
                 i=i-1
                 if i==0:
                     break
+        cuenta(5)
     case 12:
         elementos={"hidrogeno": 1, "helio": 2, "carbon": 6}
         for llave, valor in elementos.items():
             print(llave, "=", valor)
     case 13:
-        import match
+        import math
         x=math.cos(math.pi)
         print(x)
     case 14:
